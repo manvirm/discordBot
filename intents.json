@@ -1,0 +1,18 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns":["hello", "hey", "hi", "good day", "Greetings", "what's up?", "how is it going?"],
+    "responses": ["Hello!", "Hey!", "What can I do for you?"]},
+
+    {"tag": "goodbye",
+    "patterns":["bye", "cya", "talk to you later", "ciao", "See you later"],
+    "responses": ["Goodbye!", "Talk to you soon", "gonna miss you"]},
+
+    {"tag": "age",
+    "patterns":["how old", "how old are you?", "what is your age", "what is Manvir's age?", "age"],
+    "responses": ["Manvir is 23 years old", "23"]},
+
+    {"tag": "name",
+    "patterns":["What is your name?", "What do I call you?", "name?", "who are you"],
+    "responses": ["My name is aiChatBot", "I am aiChatBot, Manvir's personal assistant", "You can call me aiChatBot"]}
+
+]}
