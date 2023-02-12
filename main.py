@@ -11,14 +11,16 @@ chatbot.save_model()
 print("AI Bot running...")
 
 # Create discord client
-client = discord.Client()
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents=intents)
 
 # Load bot token
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
 
 # Listen for incoming messages
-@client.envt
+@client.event
 async def on_message(message):
     if message.author == client.user:
         return
